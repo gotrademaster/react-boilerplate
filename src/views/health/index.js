@@ -1,9 +1,4 @@
-import React from 'react';
+import View from './health.view';
+import enhancer from './health.enhancer';
 
-const Health = () => (
-  <div>
-    <h1>Component works perfectly!</h1>
-  </div>
-);
-
-export default Health;
+export default enhancer(View);

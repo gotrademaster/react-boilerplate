@@ -4,7 +4,7 @@ const example = {
   },
   reducers: {
     increment(state, payload) {
-      return state.value + payload;
+      return { ...state, value: state.value + payload };
     },
   },
   effects: () => ({

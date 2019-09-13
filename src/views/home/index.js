@@ -1,9 +1,4 @@
-import React from 'react';
+import View from './home.view';
+import enhancer from './home.enhancer';
 
-const Home = () => (
-  <div>
-    <h1>Home component</h1>
-  </div>
-);
-
-export default Home;
+export default enhancer(View);
