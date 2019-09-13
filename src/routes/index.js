@@ -7,10 +7,12 @@ const routes = [
   {
     path: '/',
     component: Home,
+    exact: true,
   },
   {
     path: '/health',
     component: Health,
+    exact: true,
   },
 ];
 
@@ -22,6 +24,8 @@ const Routes = () => (
           key={route.path}
           path={route.path}
           component={route.component}
+          // eslint-disable-next-line react/jsx-props-no-spreading
+          {...route}
         />
       ))}
     </Switch>
