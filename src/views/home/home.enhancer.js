@@ -12,7 +12,7 @@ const mapStateToProps = ({ example }) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  increment: dispatch.example.increment,
+  click: dispatch.example.click,
 });
 
 export default compose(

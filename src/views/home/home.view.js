@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Home = ({ value, increment }) => (
+const Home = ({ value, click }) => (
   <div>
     <h1>
       Hi, increment the value:
       {' '}
       {value}
-      <button type='button' onClick={() => increment(1)}>
+      <button type='button' onClick={() => click(1)}>
         increment
       </button>
     </h1>
@@ -16,7 +16,7 @@ const Home = ({ value, increment }) => (
 
 Home.propTypes = {
   value: PropTypes.number,
-  increment: PropTypes.func.isRequired,
+  click: PropTypes.func.isRequired,
 };
 
 export default Home;
