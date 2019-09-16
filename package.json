@@ -3,24 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@feathersjs/feathers": "^4.3.1",
-    "@feathersjs/rest-client": "^4.3.1",
-    "@rematch/core": "^1.2.0",
-    "axios": "^0.19.0",
+    "@feathersjs/feathers": "4.3.1",
+    "@feathersjs/rest-client": "4.3.1",
+    "@rematch/core": "1.2.0",
+    "axios": "0.19.0",
     "babel-eslint": "10.0.2",
-    "compression": "^1.7.4",
-    "env-cmd": "^10.0.1",
-    "express": "^4.17.1",
-    "feathers-rematch": "^0.1.2",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-redux": "^7.1.1",
-    "react-scripts": "3.1.1"
+    "compression": "1.7.4",
+    "env-cmd": "10.0.1",
+    "express": "4.17.1",
+    "feathers-rematch": "0.1.2",
+    "prop-types": "15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-redux": "7.1.1",
+    "react-router-dom": "5.0.1",
+    "react-scripts": "3.1.1",
+    "redux-logic": "2.1.1",
+    "rematch-logic": "1.0.1",
+    "seamless-immutable": "7.1.4",
+    "yup": "0.27.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "env-cmd -f ./environment/.env.development react-scripts start",
+    "build": "env-cmd -f ./environment/.env.production react-scripts build",
     "start:staging": "env-cmd -f ./environment/.env.staging react-scripts start",
     "start:development": "env-cmd -f ./environment/.env.development react-scripts start",
     "start:production": "env-cmd -f ./environment/.env.production react-scripts start",
@@ -43,11 +48,11 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^6.3.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^1.7.0"
+    "eslint": "6.3.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.14.3",
+    "eslint-plugin-react-hooks": "1.7.0"
   }
 }
