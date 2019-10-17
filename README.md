@@ -27,6 +27,12 @@ Immutable JS data structures which are backwards-compatible with normal Arrays a
 
 Open [https://github.com/rtfeldman/seamless-immutable](https://github.com/rtfeldman/seamless-immutable) for more information.
 
+### `Docker`
+
+Build, Share, and Run Any App, Anywhere
+
+Open [https://www.docker.com](https://www.docker.com) for more information.
+
 ## License
 
 Copyright (c) 2019
